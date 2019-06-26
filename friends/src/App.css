@@ -6,6 +6,8 @@
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .friendCards {
