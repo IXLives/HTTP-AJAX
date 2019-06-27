@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.friendPage {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.friendCards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.friendList {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 10px;
+  padding: 10px;
+  border: 1px dotted lightgrey;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addAFriend {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10px;
+  padding: 10px;
+  border: 1px dotted lightgrey;
+  border-radius: 15px;
+}
