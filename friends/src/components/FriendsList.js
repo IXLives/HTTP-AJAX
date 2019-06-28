@@ -95,7 +95,7 @@ class FriendsList extends React.Component {
           <div className="friendCards">
             {this.props.friends.map(friend => {
               return (
-                <Card>
+                <Card key = {friend.id}>
                   <CardBody>
                     <CardTitle>{friend.name}</CardTitle>
                     <CardText>{friend.age}</CardText>
