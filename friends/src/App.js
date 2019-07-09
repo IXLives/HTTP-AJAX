@@ -13,6 +13,12 @@ class App extends React.Component {
     };
   }
 
+  updateFriends = (friends) => {
+    this.setState({
+      friends
+    })
+  }
+
   componentDidMount() {
     axios
       .get("http://localhost:5000/friends")
@@ -30,7 +36,7 @@ class App extends React.Component {
         <Route
           path="/"
           render={props => (
-            <FriendsList {...props} friends={this.state.friends} />
+            <FriendsList {...props} friends={this.state.friends} updateFriends = {this.updateFriends} />
           )}
         />
       </div>
